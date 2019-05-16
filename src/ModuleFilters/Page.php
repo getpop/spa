@@ -5,11 +5,11 @@ use PoP\SPA\Modules\PageInterface;
 use PoP\Engine\ModuleFilters\AbstractModuleFilter;
 class Page extends AbstractModuleFilter
 {
-    const MODULEFILTER_PAGE = 'page';
+    const NAME = 'page';
 
     public function getName()
     {
-        return self::MODULEFILTER_PAGE;
+        return self::NAME;
     }
 
     public function excludeModule($module, &$props)
