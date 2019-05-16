@@ -1,0 +1,4 @@
+services:
+    # ModuleFilters
+    module_filters.page:
+        class: \PoP\SPA\ModuleFilters\Page

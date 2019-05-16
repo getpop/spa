@@ -28,7 +28,10 @@
     "autoload": {
         "psr-4": {
             "PoP\\SPA\\": "src"
-        }
+        },
+        "files": [
+            "initialize.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
