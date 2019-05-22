@@ -12,7 +12,7 @@ class Page extends AbstractModuleFilter
         return self::NAME;
     }
 
-    public function excludeModule($module, &$props)
+    public function excludeModule(array $module, array &$props)
     {
 
         // Exclude until reaching the pageSection
