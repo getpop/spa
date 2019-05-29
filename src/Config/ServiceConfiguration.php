@@ -9,7 +9,7 @@ class ServiceConfiguration
 {
     use PHPServiceConfigurationTrait;
     
-    public static function configure()
+    protected static function configure()
     {
         $containerBuilder = ContainerBuilderFactory::getInstance();
         
