@@ -1,4 +1,7 @@
 services:
+    _defaults:
+        public: true
+        
     # ModuleFilters
     module_filters.page:
         class: \PoP\SPA\ModuleFilters\Page
