@@ -3,7 +3,7 @@ namespace PoP\SPA;
 
 use PoP\Root\Component\AbstractComponent;
 use PoP\Root\Component\YAMLServicesTrait;
-use PoP\Root\Component\PHPConfigurableServicesTrait;
+use PoP\SPA\Configuration\ServiceConfiguration;
 
 /**
  * Class required to check if this component exists and is active
@@ -11,7 +11,6 @@ use PoP\Root\Component\PHPConfigurableServicesTrait;
 class Component extends AbstractComponent
 {
     use YAMLServicesTrait;
-    use PHPConfigurableServicesTrait;
 
     /**
      * Initialize services
@@ -29,6 +28,6 @@ class Component extends AbstractComponent
      */
     public static function boot()
     {
-        self::initPHPServiceConfiguration(dirname(__DIR__));
+        ServiceConfiguration::configure();
     }
 }
