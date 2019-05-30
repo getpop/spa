@@ -1,4 +1,3 @@
-services:        
-    # ModuleFilters
-    module_filters.page:
-        class: \PoP\SPA\ModuleFilters\Page
+services:
+    PoP\SPA\ModuleFilter\Implementations\:
+        resource: '../src/ModuleFilter/Implementations/*'
