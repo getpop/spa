@@ -1,8 +1,8 @@
 <?php
-namespace PoP\SPA\ModuleFilter\Implementations;
+namespace PoP\SPA\ModuleFilters;
 
 use PoP\SPA\Modules\PageInterface;
-use PoP\Engine\ModuleFilter\AbstractModuleFilter;
+use PoP\Engine\ModuleFilters\AbstractModuleFilter;
 class Page extends AbstractModuleFilter
 {
     const NAME = 'page';
