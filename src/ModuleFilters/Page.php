@@ -5,7 +5,7 @@ use PoP\SPA\Modules\PageInterface;
 use PoP\Engine\ModuleFilters\AbstractModuleFilter;
 class Page extends AbstractModuleFilter
 {
-    const NAME = 'page';
+    public const NAME = 'page';
 
     public function getName()
     {
