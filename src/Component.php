@@ -6,7 +6,7 @@ use PoP\Root\Component\YAMLServicesTrait;
 use PoP\SPA\Config\ServiceConfiguration;
 
 /**
- * Class required to check if this component exists and is active
+ * Initialize component
  */
 class Component extends AbstractComponent
 {
