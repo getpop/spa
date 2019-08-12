@@ -18,6 +18,8 @@ Via Composer
 $ composer require getpop/spa
 ```
 
+([PoP](https://github.com/leoloso/PoP) must be installed)
+
 <!--
 ## Usage
 
