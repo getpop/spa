@@ -3,6 +3,8 @@ namespace PoP\SPA\ModuleFilters;
 
 use PoP\SPA\Modules\PageInterface;
 use PoP\ComponentModel\ModuleFilters\AbstractModuleFilter;
+use PoP\ComponentModel\Facades\Managers\ModuleProcessorManagerFacade;
+
 class Page extends AbstractModuleFilter
 {
     public const NAME = 'page';
@@ -16,7 +18,7 @@ class Page extends AbstractModuleFilter
     {
 
         // Exclude until reaching the pageSection
-        $moduleprocessor_manager = \PoP\ComponentModel\ModuleProcessorManagerFactory::getInstance();
+        $moduleprocessor_manager = ModuleProcessorManagerFacade::getInstance();
         $processor = $moduleprocessor_manager->getProcessor($module);
         return !($processor instanceof PageInterface);
     }
