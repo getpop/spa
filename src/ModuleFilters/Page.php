@@ -3,7 +3,7 @@ namespace PoP\SPA\ModuleFilters;
 
 use PoP\SPA\Modules\PageInterface;
 use PoP\ComponentModel\ModuleFilters\AbstractModuleFilter;
-use PoP\ComponentModel\Facades\Managers\ModuleProcessorManagerFacade;
+use PoP\ComponentModel\Facades\ModuleProcessors\ModuleProcessorManagerFacade;
 
 class Page extends AbstractModuleFilter
 {
