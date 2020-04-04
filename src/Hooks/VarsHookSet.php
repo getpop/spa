@@ -7,7 +7,7 @@ class VarsHookSet extends AbstractHookSet
     protected function init()
     {
         $this->hooksAPI->addAction(
-            '\PoP\ComponentModel\Engine_Vars:addVars',
+            'ApplicationState:addVars',
             array($this, 'addVars'),
             10,
             1
