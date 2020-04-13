@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace PoP\SPA\ModuleFilters;
 
 use PoP\SPA\Modules\PageInterface;

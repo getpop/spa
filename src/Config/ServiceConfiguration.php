@@ -1,4 +1,7 @@
 <?php
+
+declare(strict_types=1);
+
 namespace PoP\SPA\Config;
 
 use PoP\ComponentModel\Container\ContainerBuilderUtils;
