@@ -19,7 +19,8 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "php" : "~7.1"
+        "php" : "~7.1",
+        "getpop/application": "~0.1"
     },
     "require-dev": {
         "phpstan/phpstan": "^0.12",
