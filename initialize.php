@@ -1,2 +1,2 @@
 <?php
-\PoP\SPA\Component::init();
+//\PoP\SPA\Component::initialize();
