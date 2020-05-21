@@ -19,12 +19,13 @@ Via Composer
 composer require getpop/spa
 ```
 
-<!--
 ## Usage
 
+Initialize the component:
+
 ``` php
+\PoP\SPA\Component::initialize();
 ```
--->
 
 ## Standards
 
