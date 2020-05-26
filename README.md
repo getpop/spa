@@ -24,7 +24,9 @@ composer require getpop/spa
 Initialize the component:
 
 ``` php
-\PoP\SPA\Component::initialize();
+\PoP\Root\ComponentLoader::initializeComponents([
+    \PoP\SPA\Component::class,
+]);
 ```
 
 ## Standards
