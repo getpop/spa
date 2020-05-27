@@ -27,9 +27,9 @@ class Component extends AbstractComponent
     /**
      * Initialize services
      */
-    protected static function doInitialize(bool $skipSchema = false): void
+    protected static function doInitialize(array $configuration = [], bool $skipSchema = false): void
     {
-        parent::doInitialize($skipSchema);
+        parent::doInitialize($configuration, $skipSchema);
         self::initYAMLServices(dirname(__DIR__));
         ServiceConfiguration::initialize();
     }
