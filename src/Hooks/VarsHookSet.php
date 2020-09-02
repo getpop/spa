@@ -17,7 +17,10 @@ class VarsHookSet extends AbstractHookSet
         );
     }
 
-    public function addVars($vars_in_array)
+    /**
+     * @param array<array> $vars_in_array
+     */
+    public function addVars(array $vars_in_array): void
     {
         $vars = &$vars_in_array[0];
         $vars['fetching-site'] = is_null($vars['modulefilter']);
