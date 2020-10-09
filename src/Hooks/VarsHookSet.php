@@ -22,7 +22,7 @@ class VarsHookSet extends AbstractHookSet
      */
     public function addVars(array $vars_in_array): void
     {
-        $vars = &$vars_in_array[0];
+        [&$vars] = $vars_in_array;
         $vars['fetching-site'] = is_null($vars['modulefilter']);
         $vars['loading-site'] = $vars['fetching-site'] && $vars['output'] == GD_URLPARAM_OUTPUT_HTML;
 
