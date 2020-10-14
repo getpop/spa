@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 namespace PoP\SPA\Config;
 
-use PoP\ComponentModel\Container\ContainerBuilderUtils;
 use PoP\Root\Component\PHPServiceConfigurationTrait;
+use PoP\ComponentModel\Container\ContainerBuilderUtils;
+use PoP\ComponentModel\ModuleFiltering\ModuleFilterManagerInterface;
 
 class ServiceConfiguration
 {
@@ -15,7 +16,7 @@ class ServiceConfiguration
     {
         // Add ModuleFilter to the ModuleFilterManager
         ContainerBuilderUtils::injectServicesIntoService(
-            'module_filter_manager',
+            ModuleFilterManagerInterface::class,
             'PoP\\SPA\\ModuleFilters',
             'add'
         );
