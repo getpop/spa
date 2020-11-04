@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 namespace PoP\SPA\Hooks;
-use PoP\Engine\Hooks\AbstractHookSet;
+use PoP\Hooks\AbstractHookSet;
 
 class VarsHookSet extends AbstractHookSet
 {
