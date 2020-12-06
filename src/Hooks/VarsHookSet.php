@@ -28,9 +28,9 @@ class VarsHookSet extends AbstractHookSet
 
         // Settings format: the format set by the application when first visiting it, configurable by the user
         if ($vars['loading-site']) {
-            $vars['settingsformat'] = strtolower($_REQUEST[GD_URLPARAM_FORMAT]);
+            $vars['settingsformat'] = strtolower($_REQUEST[GD_URLPARAM_FORMAT] ?? '');
         } else {
-            $vars['settingsformat'] = strtolower($_REQUEST[GD_URLPARAM_SETTINGSFORMAT]);
+            $vars['settingsformat'] = strtolower($_REQUEST[GD_URLPARAM_SETTINGSFORMAT] ?? '');
         }
 
         // Format: if not set, then use the 'settingsFormat' value if it has been set.
